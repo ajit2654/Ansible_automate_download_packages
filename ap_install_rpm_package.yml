@@ -1,0 +1,10 @@
+---
+# This is a simple YAML script to install rpm package using yum.
+ - hosts: localhost     # host may be differ localhost to webservers
+   become: true
+   tasks:
+   - name: install rpm
+     yum: name=rpm state=latest     # install rpm 
+...
+  
+   
